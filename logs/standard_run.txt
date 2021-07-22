@@ -1,0 +1,72 @@
+✔ STARTING LENGTH: 10 | ITERATIONS: 5 | MULTIPLIER: 10
+
+ℹ ---------- Iteration #1 | Length: 10 ---------------
+
+✔ Benchmarking: V1 - Concatenation
+✔ ** Took: 2ms | memory: 27.140625 MB | string length: 35048
+ℹ -------------------------
+✔ Benchmarking: V2 - File system as buffer
+✔ ** Took: 26ms | memory: 27.44921875 MB | string length: 35048
+ℹ -------------------------
+✔ Benchmarking: V3 - Direct Buffers
+✔ ** Took: 0ms | memory: 27.45703125 MB | string length: 35048
+ℹ -------------------------
+✔ Benchmarking: V4 - Using Arrays
+✔ ** Took: 0ms | memory: 27.7265625 MB | string length: 35048
+
+ℹ ---------- Iteration #2 | Length: 100 ---------------
+
+✔ Benchmarking: V1 - Concatenation
+✔ ** Took: 0ms | memory: 27.73046875 MB | string length: 350498
+ℹ -------------------------
+✔ Benchmarking: V2 - File system as buffer
+✔ ** Took: 10ms | memory: 28.41015625 MB | string length: 350498
+ℹ -------------------------
+✔ Benchmarking: V3 - Direct Buffers
+✔ ** Took: 0ms | memory: 27.92578125 MB | string length: 350498
+ℹ -------------------------
+✔ Benchmarking: V4 - Using Arrays
+✔ ** Took: 0ms | memory: 27.91796875 MB | string length: 350498
+
+ℹ ---------- Iteration #3 | Length: 1000 ---------------
+
+✔ Benchmarking: V1 - Concatenation
+✔ ** Took: 0ms | memory: 27.6484375 MB | string length: 3504998
+ℹ -------------------------
+✔ Benchmarking: V2 - File system as buffer
+✔ ** Took: 80ms | memory: 36.20703125 MB | string length: 3504998
+ℹ -------------------------
+✔ Benchmarking: V3 - Direct Buffers
+✔ ** Took: 1ms | memory: 32.91015625 MB | string length: 3504998
+ℹ -------------------------
+✔ Benchmarking: V4 - Using Arrays
+✔ ** Took: 2ms | memory: 32.91796875 MB | string length: 3504998
+
+ℹ ---------- Iteration #4 | Length: 10000 ---------------
+
+✔ Benchmarking: V1 - Concatenation
+✔ ** Took: 0ms | memory: 29.5703125 MB | string length: 35049998
+ℹ -------------------------
+✔ Benchmarking: V2 - File system as buffer
+✔ ** Took: 735ms | memory: 97.33984375 MB | string length: 35049998
+ℹ -------------------------
+✔ Benchmarking: V3 - Direct Buffers
+✔ ** Took: 7ms | memory: 63.6015625 MB | string length: 35049998
+ℹ -------------------------
+✔ Benchmarking: V4 - Using Arrays
+✔ ** Took: 12ms | memory: 63.67578125 MB | string length: 35049998
+
+ℹ ---------- Iteration #5 | Length: 100000 ---------------
+
+✔ Benchmarking: V1 - Concatenation
+✔ ** Took: 20ms | memory: 40.265625 MB | string length: 350499998
+ℹ -------------------------
+✔ Benchmarking: V2 - File system as buffer
+✔ ** Took: 6745ms | memory: 708.921875 MB | string length: 350499998
+ℹ -------------------------
+✔ Benchmarking: V3 - Direct Buffers
+✔ ** Took: 74ms | memory: 374.65625 MB | string length: 350499998
+ℹ -------------------------
+✔ Benchmarking: V4 - Using Arrays
+✔ ** Took: 127ms | memory: 376.0859375 MB | string length: 350499998
+✔ --- Testing finished ---
