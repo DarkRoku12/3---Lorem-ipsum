@@ -2,6 +2,8 @@ import "./exceptionHandler.js";
 import Env       from "./environment.js";
 import Logger    from "./spinLogger.js";
 import Benchmark from "./benchmark.js";
+import Lorem     from "./lorem-ipsum.js";
+
 
 // Tests //
 import service_v1 from "./service_v1.js";
@@ -18,6 +20,10 @@ import service_v4 from "./service_v4.js";
 
   /// Debug info ///
   Logger( `STARTING LENGTH: ${length} | ITERATIONS: ${iterations} | MULTIPLIER: ${multiplier} ` , { log : "info" });
+
+  /// Pre-load (to impact less the first benchmark) ///
+  await Lorem.as.text();
+  await Lorem.as.buffer();
 
   //// Do benchmark ////
 

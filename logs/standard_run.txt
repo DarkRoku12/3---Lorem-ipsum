@@ -3,7 +3,7 @@
 ℹ ---------- Iteration #1 | Length: 10 ---------------
 
 ✔ Benchmarking: V1 - Concatenation
-✔ ** Took: 2ms | memory: 27.140625 MB | string length: 35048
+✔ ** Took: 0ms | memory: 27.140625 MB | string length: 35048
 ℹ -------------------------
 ✔ Benchmarking: V2 - File system as buffer
 ✔ ** Took: 26ms | memory: 27.44921875 MB | string length: 35048
