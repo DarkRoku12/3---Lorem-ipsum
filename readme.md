@@ -43,7 +43,7 @@ you can see that the services actually runs faster, but the result is __not__ th
 `STARTING_LENGTH: 10 | MULTIPLIER: 10 | ITERATIONS: 5 | DISABLE_BUFF_TO_STRING: true`
 | service version            | iteration #1      | iteration #2     | iteration #3    | iteration #4     | iteration #5        |
 |----------------------------|-------------------|------------------|-----------------|------------------|---------------------|
-| V1 - Concatenation         | 2ms (27.14 MB)    | 0ms  (27.73 MB)  | 0ms (27.64 MB)  | 0ms  (29.57 MB)  | 20ms (40.26 MB)     |
+| V1 - Concatenation         | 0ms (27.14 MB)    | 0ms  (27.73 MB)  | 0ms (27.64 MB)  | 0ms  (29.57 MB)  | 20ms (40.26 MB)     |
 | V2 - File system as buffer | 26ms (27.44 MB)   | 10ms (28.41 MB)  | 80ms (36.20 MB) | 735ms (97.33 MB) | 6745ms  (708.92 MB) |
 | V3 - Direct Buffers        | 0ms (27.45)       | 0ms  (27.92 MB)  | 1ms (32.91 MB)  | 7ms  (63.60 MB)  | 74ms (374.65 MB)    |
 | V4 - Using Arrays          | 0ms (27.72 MB)    | 0ms  (27.91 MB)  | 2ms (32.91 MB)  | 12ms (63.67 MB)  | 127ms (376.08 MB)   |
