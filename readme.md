@@ -45,8 +45,8 @@ you can see that the services actually runs faster, but the result is __not__ th
 |----------------------------|-------------------|------------------|-----------------|------------------|---------------------|
 | V1 - Concatenation         | 2ms (27.14 MB)    | 0ms  (27.73 MB)  | 0ms (27.64 MB)  | 0ms  (29.57 MB)  | 20ms (40.26 MB)     |
 | V2 - File system as buffer | 26ms (27.44 MB)   | 10ms (28.41 MB)  | 80ms (36.20 MB) | 735ms (97.33 MB) | 6745ms  (708.92 MB) |
-| V3 - Direct Buffers        | 0ms (27.45)       | 0ms  (27.92 MB)  | 1ms (MB)| 7ms   | 74ms (63.60 MB)  | 74ms (374.65 MB)    |
-| V4 - Using Arrays          | 0ms (27.72 MB)    | 0ms  (27.91 MB)  | 2ms (MB)| 12ms  | 127ms (63.67 MB) | 127ms (376.08 MB)   |
+| V3 - Direct Buffers        | 0ms (27.45)       | 0ms  (27.92 MB)  | 1ms (32.91 MB)  | 7ms  (63.60 MB)  | 74ms (374.65 MB)    |
+| V4 - Using Arrays          | 0ms (27.72 MB)    | 0ms  (27.91 MB)  | 2ms (32.91 MB)  | 12ms (63.67 MB)  | 127ms (376.08 MB)   |
 
 Those results are extracted from `logs/standard_run.txt`.
 Memory were measured with `process.memoryUsage.rss() / 1024 / 1024`.
