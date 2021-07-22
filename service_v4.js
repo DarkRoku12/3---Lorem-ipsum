@@ -5,7 +5,7 @@ import Lorem from "./lorem-ipsum.js";
 */
 export default async function generate_lorem_v4( lengths )
 {
-  const txt =  await Lorem.as.text();
+  const txt = await Lorem.as.text();
   const arr = [];
 
   for( let i = 0; i < lengths; ++i ) arr.push( txt );
